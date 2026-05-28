@@ -25,7 +25,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       - name: Run Lychee
-        uses: lycheeverse/lychee-action@v1
+        uses: lycheeverse/lychee-action@v2.0.2
         with:
           args: "--verbose --no-progress './**/*.md' './**/*.html' './**/*.rst'"
           output: ${{ runner.temp }}/lychee/out.md
